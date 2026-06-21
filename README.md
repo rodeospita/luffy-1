@@ -190,6 +190,30 @@ You can contact the developer directly via this <a href="mailto:swarn@demonkings
 If you run into issues or want to request a new feature, you are encouraged to make a GitHub issue, won't bite you, trust me.
 
 
+
+
+### 📝 Complete TODO List
+
+The following items are still pending. They are listed in file-path lexicographical order with increasing line numbers within each file.
+
+#### core (Top-level Core Files)
+
+- `core/version.go` line 1: Update the luffy version to the latest stable release on every commit.
+- `core/decrypt.go` line 1: Integrate real-debrid or premium debrid services for premium-only streams.
+- `core/decrypt.go` line 2: Add support for additional encryption protocols beyond the current AES-based implementations.
+- `core/decrypt.go` line 3: Implement per-provider decryption overrides for providers that use custom ciphers.
+- `core/downloader.go` line 1: Add support for streaming while downloading (live/milestone streaming).
+- `core/history.go` line 1: Persist watch history as sqlite database for cross-platform history support.
+- `core/image.go` line 1: Add support for additional image rendering backends (kitty, iterm, symbols).
+- `core/input.go` line 1: Implement fuzzy-search-based filtering for the episode-selection menu.
+- `core/player.go` line 1: Add support for casting to Chromecast or AppleTV via native integrations.
+- `core/provider.go` line 1: Add support for auto-provider-selection based on fastest/strict geo restrictions.
+- `core/providers/allanime.go` line 1: Add missing streaming integration for the AllAnime dub sub-provider.
+- `core/providers/cineby.go` line 1: Integrate custom reverse-engineered API endpoints for Cineby.
+- `core/providers/fmovies.go` line 1: Restore FMovies provider support with required scraping logic.
+- `core/providers/youtube.go` line 1: Add subtitle fetching to YouTube provider using yt-dlp integration.
+- `cmd/root.go` line 1: Add support for streaming from inline URLs (e.g. direct m3u8/m3u8+ts streams).
+- `cmd/root.go` line 2: Add support for streaming from inline magnet links via torrent streaming.
 # Providers
 
 Luffy uses 2 main providers, which you can easily change between by specifying them in the config file: `$HOME/.config/luffy/conf`
